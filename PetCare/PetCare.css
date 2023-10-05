@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width:100%;
+    background-color: white;
+    height: 70px;
+    align-items: center;
+    padding: 100px 1%;
+}
+.logo{
+    width: 110px;
+    cursor: pointer;
+}
+.logoname{
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+.menu{
+    height: 100px;
+    width:900px;
+    padding-top: 40px;
+}
+.menu li{
+    display: inline-block;
+    list-style:none;
+    padding: 10px 3px;
+    color: white;
+    font-size: 30px;
+    
+}
+.menub{
+    height:100px;
+    width:300px;
+    background-color:  white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 40px;
+    /*padding-bottom: 10px;*/
+    font-size: 30px;
+
+}
+.buttons{
+   align-items: center;
+}
+.loginbtn{
+    background-color: rgb(243, 134, 9);
+    padding: 10px 20px;
+    color: white;border-radius: 20px;
+    
+}
+.signbtn{
+    background-color: black;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    padding: 10px 20px;
+}
+section.hero{
+    background-color: white ;
+    height: 55rem;
+}
+section.container{
+    background-color:  orange;
+    height: 50rem;
+}
+footer{
+    background-color: peru;
+    height: 30rem;
+}
+.heroimg{
+    float:right;
+    background-color: #e38314;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
