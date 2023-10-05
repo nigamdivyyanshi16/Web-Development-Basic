@@ -1,0 +1,215 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.ubanner{
+    width: 100%;
+    height:100vh;
+   
+}
+
+.left{
+    z-index: -10;
+}
+.left img{
+    width:380px;
+    height:280px;
+    cursor: pointer;
+}
+.middle{
+    display: flex;
+    width: 100%;
+    height: 17%;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    border:0px;
+    justify-content: space-between;
+}
+.middle ul{
+    float: left;
+    margin-right: 120px;
+    padding-left: 500px;
+}
+.middle ul li{
+    line-height: 80px;
+    list-style: none;
+    display: inline-block;
+    margin:0 26px;
+    position: relative;
+}
+.middle ul li a{
+    color: rgb(20, 20, 20);
+    font-size: 60px;
+    text-decoration: none;
+    font-family:'sans-serif';
+}
+.right {
+    padding-right: 34px;
+    margin-right: 23px;
+    padding-bottom: 23px;
+}
+.right .log ul li{
+    background-color: white;
+    outline: 1px solid white;
+    font-size: 34px;
+    color: black;
+    line-height: 80px;
+}
+.right .sign button{
+    border-radius: 30px;
+    text-align: center;
+    margin:0 10px;
+    color:white;
+    background-color: black;
+    font-size: 54px;
+}
+
+.lbanner .video-container{
+    width: 100%; /* Adjust as needed */
+    height: 100vh; /* Adjust as needed */
+    position: absolute;
+    overflow: hidden;
+    inset: 0;
+    z-index: -99;
+}
+  
+.lbanner video {
+    width: 110%;
+    height: 190%;
+    position: absolute;
+    top: -323px;
+    left: -86px;
+}
+  
+  /* Additional styling for the content */
+.lbanner .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 123px;
+    z-index: 1;
+  }
+.lbanner .content .buttoncontainer{
+    display:flex;
+    justify-content: center;
+    padding-left: 4423px;
+    padding-top: 4px;
+    padding-bottom: 870px;
+    margin: 210px 110px;
+    position:relative;
+}
+
+button{
+
+    padding: 15px 20px;
+    text-align: center;
+    margin:0px 10px;
+    border-radius: 98px;
+    height: 150px;
+    width: 400px;
+    background: transparent;
+    color: white;
+    font-size: 60px;
+    backface-visibility:visible;
+   
+   
+}
+button:hover{
+    background-color: #d1c5c5;
+    z-index:-1;
+}
+.content{
+        width: 100%;
+        position:absolute;
+        top:50%;
+        text-align:center;
+        color:wheat;
+    }
+.content h3{
+        font-size: 112px;
+        text-align: center;
+        padding-left: 132px;
+        line-height: 126px;
+        position: absolute;
+        width: 35%;
+        top:50%;
+        left:49%;
+        transform:translate(-50%,-50%) ;
+    }
+.content p{
+        transform: translate(-50%,-50%);
+        text-align: center;
+        line-height: 91px;
+        margin: auto;
+        font-size:78px;
+        position: absolute;
+        width:69%;
+        top:65%;
+        left:53%;
+        word-spacing: -4px;
+
+}
+.content .search{
+    position:absolute;
+    right:2173px;
+    top:1599px;
+    display: inline-block;
+
+   
+}
+form{
+    background-color: rgb(199, 193, 193);
+    width:7000px;
+    height: 199px;
+    display: flex;
+    border-radius: 94px;
+    align-items: center;
+    padding: 24px;
+    font-size: 123px;
+    float: center;
+    width:190%;
+    left:134%;
+    top:234px;
+   
+
+}
+form input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding: 54px;
+    border-radius: 94px;
+    font-size: 53px;
+    background-color: rgb(202, 195, 195);
+}
+.lbanner .trending .features button{
+    padding: 15px 20px;
+    text-align: center;
+    margin:0px 10px;
+    border-radius: 98px;
+    height: 150px;
+    width: 400px;
+    background: transparent;
+    color: white;
+    font-size: 60px;
+
+}
+.lbanner .trending{
+    justify-content: center;
+    padding-right: 4234px;
+    padding-bottom:344px;
+    padding-top: 3234px;
+    padding-left: 345px;
+    margin:0 10px;
+
+}
+    

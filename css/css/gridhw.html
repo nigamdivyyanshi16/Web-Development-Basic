@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides</title>
+    <!-- gridtemplate areas, texttransform(c) -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:linear-gradient(45deg , blueviolet,greenyellow);
+        }
+        .heading{
+            text-align: center;  
+            font-size: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-style: italic;
+            font-family: sans-serif;
+            text-transform:capitalize; 
+        }
+        .boxcontainer{
+            display:grid;
+            grid-template-columns:repeat(3,800px);  
+            gap:15px;
+            justify-content: center;
+        }
+        .box{
+            outline:1px solid black;
+            box-shadow: 0 5px 10px rgba(0,0,0,.2);
+            border-radius: 5px;
+            background: white;
+            text-align:center;
+            padding:30px 20px;
+            min-height: 100px;
+            min-width: 100px;
+            column-gap: 10px;
+            row-gap:10px;
+            
+        }
+        .box img{
+            height:300px;
+            object-fit: cover;
+            object-position: top;
+
+
+        }
+        .box h3{
+            font-size: 22px;
+            padding:10px 0;
+        }
+        .box p{
+            color:rgb(218, 18, 18);
+            font-size: 30px;
+            line-height: 1.3em;
+        }
+        
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Guides</h1>
+        <div class="boxcontainer">
+            <div class="box">
+                <img src="../css/1.png" alt="html">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, distinctio.</p>
+                <a href="#" class="btn">read more</a>
+            </div>  
+            <div class="box">
+                <img src="../images/image1.jpg" alt="html">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, distinctio.</p>
+                <a href="#" class="btn">read more</a>
+            </div>  
+            <div class="box">
+                <img src="../images/image1.jpg" alt="html">
+                <h3>Figma</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, distinctio.</p>
+                <a href="#" class="btn">read more</a>
+            </div>  
+            <div class="box">
+                <img src="../images/image1.jpg" alt="html">
+                <h3>Jquery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, distinctio.</p>
+                <a href="#" class="btn">read more</a>
+            </div>  
+            <div class="box">
+                <img src="../images/image1.jpg" alt="html">
+                <h3>Bootstrap</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, distinctio.</p>
+                <a href="#" class="btn">read more</a>
+            </div>  
+
+        </div>
+    </div>
+</body>
+</html>

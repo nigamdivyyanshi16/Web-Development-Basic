@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2 Css</title>
+    <style>
+        /* [type=text]{ 
+            border:1px solid black;
+            padding:10px;
+            display:block;
+
+        }*/
+        .inp{
+            border:1px solid black;
+            padding:10px;
+            display:block;
+            margin-bottom: 5px;
+            border-radius:5px;
+        }
+        /* prop that contains i.e if href* so it will search all href that contains(.com) */
+        [href*=".com"]               
+        {
+            color:red;
+            background-color: peachpuff;
+
+        }
+        /* attribute that ends with */
+        [href$=".org"]{
+            color:blue;
+            background-color: yellow;
+        }
+        /* attr that starts with  */
+        [href^="https"]
+        {
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <input  class= "inp" type="text" name="username" placeholder="Enter your username">
+            <input  class="inp" type="text" name="city" placeholder="Enter your city">
+            <input  class="inp" type="text" name="country" placeholder="Enter your country">
+            <input  class="inp" type="email" name="email" placeholder="Enter your email">
+            <input  class="inp" type="password" name="password" placeholder="Enter your password">
+            <input  class="inp" type="password" name="cpassword" placeholder="Enter confirmed password">
+            <label >
+                <input type="checkbox">I agree to terms and conditions
+            </label>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </div>
+    <div>
+        <ul>
+            <li><a href="google.com" target="blank">Google</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="http://www.linkedin.com">LinkedIn</a></li>
+            <li><a href="wikipedia.org">Wikipedia</a></li>
+        </ul>
+    </div>
+</body>
+</html>

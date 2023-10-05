@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        p{
+            color: red;
+            font-style: oblique;
+        }
+        #header{
+            color:blue;
+            font-style: italic;
+        }
+        .item{
+            color:rgb(255, 76, 6);
+            font-style: normal;
+        }
+        .subitem
+        {
+            color:green;
+            font-style:normal;
+        border:1px solid black;
+        }
+        .subitem:hover{
+            color:black;
+        }
+    </style>
+    <h3 id="header">Selectors</h3>
+    <ul>
+        <li  class="item">
+            Tag Selectors
+            <ul class="subitem">
+                <li>p{}</li>
+                <li>h1{}</li>
+                <li>a{}</li>
+            </ul>
+
+        </li>
+        <li class="item">
+            ID selectors
+            <ul class="subitem">
+                <li>#menu{}</li>
+                <li>#header{}</li>
+                <li>#footer{}</li>
+            </ul>
+        </li>
+        <li class="item">
+            Class selectors
+            <ul class="subitem">
+                <li>.menu{}</li>
+                <li>.header{}</li>
+                <li>.footer{}</li>
+            </ul>
+        </li>
+        <li class="item">
+            Pseudo Class selectors
+            <ul class="subitem">
+                <li>a:hover</li>
+                <li>a:active</li>
+                <li>a:visited</li>
+                <li>a:focus</li>
+            </ul>
+        </li>
+        <li class="item">
+           Universal  selectors
+            <ul class="subitem">
+                <li>*{}</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Quo maiores rerum corporis eum atque, officia dolor eos, alias ullam esse nam soluta modi maxime adipisci quidem ducimus quam magni. Eligendi fugit 
+        illum laborum deleniti soluta cupiditate maiores ratione perspiciatis.
+
+    </p>
+</body>
+</html>

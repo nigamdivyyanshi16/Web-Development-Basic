@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attributes Demo</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;    
+    }
+    .box{
+        width:500px;
+        height:500px;
+        background-color: cornflowerblue;
+        outline:2px solid black;
+        margin: 1rem auto;
+    }
+    .one{
+        background-image: url(../css/image3.png),url(../css/4.png),url(../css/5.png);
+        background-position : bottom left,top,center;
+        background-repeat:repeat-x,no-repeat;
+        background-size: 10%,50%,100%;
+        outline:4px solid black;
+        margin: 1rem 2rem 3rem 4rem;
+        /* top right bottom left */
+        /* topbottom leftright */
+    }
+    .two{
+        background-image: radial-gradient(circle at 50% 50%, green,white);
+        clip-path: polygon(100% 0, 59% 58%, 100% 100%, 25% 100%, 0% 50%, 4% 0);
+        /* when clipped extra data or text is cut off */
+        margin:2rem 1rem 2rem 4rem;
+        outline:4px solid black;
+    }
+    .three{
+        padding:1rem 2rem;
+        overflow-y:scroll;
+    }
+</style>
+<body>
+    <main>
+        <div class="box one">
+            One
+        </div>
+        <div class="box two">
+            Two
+        </div>
+        <div class="box three">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque neque, eaque ducimus, pariatur obcaecati adipisci repellendus earum vero debitis tempora natus laudantium. Dolorum id, dolorem suscipit corporis nam saepe illo repellat culpa in molestias doloribus inventore optio maxime sunt quos dolores numquam cupiditate nesciunt nisi a voluptatum veniam? Eum dolor possimus sit quasi dolorum aliquid voluptas corrupti corporis expedita quis debitis laborum labore voluptatum fuga nostrum, quo hic eius optio rerum sed quibusdam! Cupiditate nobis sunt ex, enim perferendis quod impedit. Quidem est aliquam temporibus iusto ullam ex incidunt asperiores cumque animi enim placeat porro dolore, dolor id accusantium adipisci, perspiciatis necessitatibus recusandae doloremque sed suscipit esse? Beatae officia commodi earum in provident est saepe vitae dolores odit consectetur blanditiis odio architecto, reiciendis possimus, repellat cumque quaerat minus, corporis hic vero magni? Voluptatibus ad necessitatibus vero, ab cupiditate sed culpa consequatur labore odit id officia fugit similique quod, accusantium provident aliquam quae ullam nemo. Voluptatum dolore officiis reiciendis voluptates illum corrupti repellendus tempore eius neque incidunt, cum nulla atque mollitia. Deserunt velit molestias accusamus ipsum neque aspernatur accusantium dolores maiores possimus dignissimos illo, beatae optio veniam aperiam fugiat laboriosam reprehenderit alias eaque exercitationem rerum adipisci odit culpa, doloribus ducimus. Labore deserunt blanditiis consectetur sed laborum aspernatur et unde libero veniam dolor voluptate ratione, architecto doloremque? Amet eligendi laboriosam, consectetur veniam quidem pariatur ea nobis at illo molestiae a ducimus odio, expedita aut in, fugiat qui alias dignissimos fuga necessitatibus officia harum. Quia ab fuga nam, id vitae ducimus aperiam, reiciendis repudiandae cupiditate hic rem enim! Ad omnis officia excepturi alias at eveniet iste consequuntur praesentium dolorum dignissimos harum cum a maiores magnam dolor tempora, quasi, aliquam necessitatibus? Quidem, ipsa architecto quis voluptatem quia quo assumenda nesciunt possimus dolorum accusantium consectetur pariatur ipsam excepturi nobis quasi porro expedita commodi. Facilis qui, minima eius velit, laudantium sequi dolorum deserunt delectus aliquam inventore autem accusantium nostrum culpa quis sapiente fugiat dolores perferendis quia vitae. Vero totam maiores explicabo, incidunt natus ea ullam ad deserunt hic minus sint labore quas voluptatem fugiat culpa libero aspernatur aliquid amet. Fugiat soluta esse dicta nisi qui nesciunt beatae enim aspernatur nihil accusantium cum inventore nostrum reprehenderit quia aliquam dignissimos cupiditate ad, ab quaerat at rem sapiente asperiores unde nobis! Architecto, molestiae nesciunt repellendus cupiditate quibusdam possimus perferendis ratione eveniet, veritatis incidunt, libero repudiandae nisi odit officia beatae tempora. Praesentium rem minima recusandae nesciunt, non vero culpa nemo? Explicabo ipsum sapiente ab modi. Sequi veritatis, maxime illum odio deserunt sit! Mollitia, non vel error tenetur cum quibusdam tempore nihil aspernatur odit corporis consectetur ad quidem unde enim necessitatibus ut totam! Explicabo voluptas, pariatur sed doloribus, quia eos libero accusamus fuga iste saepe ullam! Architecto ut ad inventore hic at magnam, odio aliquid enim qui sed natus. Ipsum corrupti nesciunt blanditiis recusandae enim dolores ipsa eius doloribus ipsam. Nostrum pariatur ipsam consectetur accusantium a natus, repellat dolorum fuga laboriosam cum velit eos in culpa odit reiciendis placeat! Nobis eaque illo est. Blanditiis dolorem totam incidunt maxime sit fugiat quae.
+        </div>
+    </main>
+</body>
+</html>

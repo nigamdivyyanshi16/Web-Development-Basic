@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+
+    background:rgb(27, 25,25);
+    color:white;
+}
+p{
+    text-align: center;
+    margin:40px;
+}
+h1{
+    text-align: center;
+    margin:20px 0;
+}
+img{
+    display: block;
+    margin:10px auto;
+    border:10px solid #a7a4a4;
+    height:250px;
+}

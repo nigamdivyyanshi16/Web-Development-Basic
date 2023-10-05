@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        main{
+            display:grid;
+            grid-template-columns:1fr 5fr;
+        }
+        section{
+            min-width: 350px;
+            min-height: 500px;
+            /* min ht and min wt is basically used to spread it */
+            background-color: cyan;
+            outline: 2px solid rgb(32, 30, 30);
+        }
+        #area1{
+            display: grid;
+            grid-template-columns: repeat(5,minmax(50px,1fr));
+            /* 50px auto 100px 1fr */
+            grid-template-rows: repeat(5,minmax(50px, 1fr));
+            column-gap:10px;
+            align-items:end;
+        }
+        .box{
+            min-width:50px;
+            height:50px;
+            background-color: rgb(20,60,89);
+            font-size: 3 rem;
+            outline: 2px solid white;
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="area1">
+            <!-- .box.one*20 -->
+                <div class="box one"></div>                  
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+                <div class="box one"></div>
+        </section>
+        <section>
+            
+        </section>
+    </main>
+</body>
+</html>

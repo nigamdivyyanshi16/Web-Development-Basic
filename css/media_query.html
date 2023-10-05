@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+
+    h2{
+        color:red;
+    }
+    ul{
+        list-style:none;
+        padding:0;
+        display:flex;
+        gap:10px;
+        flex-wrap:wrap;
+
+    }
+    li{
+        padding:10px;
+        background-color: #ccc;
+        margin:10px 0;
+    }
+    @keyframes shake{
+            0%{
+                transform: translateY(-3rem);
+            }
+            33%{
+                transform: translateY(-3rem);
+            }
+            66%{
+                transform:rotateY(360deg) translate(4rem);
+                background-color: red;
+
+            }
+    }
+    li{
+            animation: shake 1s infinite;
+            /* animation-name:shake ;
+            animation_duration:1s;
+            animation-delay:*/
+            animation-iteration-count:infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction:reverse;
+            animation-fill-mode:forwards;
+            animation-play-state: paused;
+            
+    }
+    li:first-child{
+        animation-delay:100ms;
+    }
+    
+        /*phone*/
+    @media (max-width:660px){
+        ul{
+            justify-content: center;
+            /*to fill the area*/
+            align-items: stretch;
+            height:300px;
+            gap:2px;
+            background-color: aquamarine;
+            color:black;
+            font-size:23px;
+
+        }
+        li{
+        padding:50px;
+        width:100px;
+        background-color: #ccc;
+        margin: 0;
+        border-radius: 100px;
+        background-color: peachpuff;
+
+    }
+    h2{
+        text-align: center;
+    }
+    }
+    /* tablet */
+    @media(min-width:600px) and (max-width:990px){
+        h2{
+            color:blue;
+        }
+
+
+    }
+    /* desktop */
+    @media(min-width:900px){
+
+    }
+    /* extra large screen  */
+    @media(min-width:1200px){
+
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Welcome to Media Query</h2>
+        <ul>
+        <li>Lorem</li>
+        <li>ipsum</li>
+        <li>dolor</li>
+        <li>sit</li>
+        <li>amet</li>
+        </ul>
+    </main>
+</body>
+</html>
