@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollEffects</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <style>
+        main{
+            height:1000vh;
+        }
+        h1{
+            background-color: aqua;
+            padding:.5rem;
+            margin:0;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Please scroll</h1>
+        <button>A simple button</button>
+    </main>
+    <script>
+        var controller=new ScrollMagic.Controller();
+        new ScrollMagic.Scene({
+            duration:500,//the scene should last for a scroll distance of 500px//kitni der tk chipki rahegi
+           // offset:0 //starting from (Assign the scene of controller)
+        })
+        .setPin("h1")
+        .addIndicators()//for understanding scroll position
+        .addTo(controller);//assign the scene to the controller
+    </script> 
+    
+</body>
+</html>

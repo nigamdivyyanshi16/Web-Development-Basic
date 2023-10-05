@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+       /* Reset default margin and padding for the whole document */
+       *{
+        margin:0;
+        padding:0;
+        background-color:  antiquewhite;
+       }
+       h1{
+        text-align: center;
+        font-size: 53px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 102px;
+        background-color:#914a4f;
+        color:white;
+        word-spacing: 13px;
+        text-transform:uppercase;
+    }
+    .container{
+        padding: 34px;
+        
+    }
+    .box{
+        line-height: 40px;
+    }
+    .box a{
+         font-size: 34px;
+         word-spacing: 9px;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+    .box p{
+        font-size: 22px;
+        color:black;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style:oblique;
+        text-overflow: ellipsis;
+        }
+    .box a:hover::after{
+        color:white;
+        font-size: large;
+    }
+
+    </style>
+</head>
+<body>
+    <main>
+    <h1>
+        The JavaScript Basics
+    </h1>
+        
+    <div class="container">
+        <div class="box">
+            <a href="">Lorem, ipsum dolor.</a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nam rem ut nulla aspernatur veniam ad! Expedita accusamus, accusantium molestias dolor neque laborum, eos voluptatem obcaecati modi ipsum maxime sint?</p>
+        </div>
+        <div class="box">
+            <a href="">Molestias, ipsam temporibus!</a>
+            <p>Officia, nisi debitis. Harum aspernatur quos illum repudiandae voluptates exercitationem deserunt, aperiam illo non quidem accusamus, vel quo excepturi maxime veritatis, sunt nemo hic quod. Soluta omnis accusantium sunt mollitia?</p>
+        </div>
+        <div class="box">
+            <a href="">Soluta, blanditiis perspiciatis.</a>
+            <p>Corrupti sit, asperiores cum iure molestiae quod maxime ea voluptatum saepe molestias harum! Enim aliquam voluptatum modi eaque libero minima dolore explicabo molestiae provident, assumenda tempora vel molestias. Cumque, et!</p>
+        </div>
+        <div class="box">
+            <a href="">Ratione, ipsam quibusdam.</a>
+            <p>Officiis molestiae et aliquam a culpa pariatur vel cum est? Iusto quidem porro, reiciendis eaque modi ab optio dicta quam atque facere tempora quia adipisci, explicabo itaque obcaecati. Excepturi, aut!</p>
+        </div>
+        <div class="box">
+            <a href="">Tempora, veritatis molestiae?</a>
+            <p>Iusto eveniet officiis ducimus? Animi sint nam beatae sunt in, non dolorem. Asperiores aut quam magnam maxime velit pariatur nobis reiciendis nam, fugit expedita nulla voluptatum facilis at dolorem nisi?</p>
+        </div>
+        <div class="box">
+            <a href="">Officiis, nulla quis!</a>
+            <p>Facere beatae id iste optio praesentium nulla perferendis ea fugit iusto. Suscipit voluptates, et soluta nesciunt consequatur cumque quibusdam tenetur, tempore aliquid, ducimus dolorum quam veritatis maiores aliquam perferendis. Eligendi?</p>
+        </div>
+        <div class="box">
+            <a href="">Voluptatem, quis vitae!</a>
+            <p>Amet ipsa ab, voluptas eligendi aut sit architecto veritatis nihil? Harum corporis assumenda minima mollitia commodi officia blanditiis quos ipsum similique suscipit quo sed, ducimus magnam sint obcaecati totam aliquid?</p>
+        </div>
+        <div class="box">
+            <a href="">Expedita, distinctio ullam.</a>
+            <p>Itaque adipisci voluptatum nobis assumenda nemo corporis nisi laboriosam placeat accusamus aliquid vel saepe in dolores, omnis, explicabo soluta perspiciatis unde numquam consequuntur. Eum dolorum quia deleniti deserunt recusandae placeat!</p>
+        </div>
+        <div class="box">
+            <a href="">Quaerat, vero voluptate?</a>
+            <p>Provident impedit maxime nam vero doloremque voluptatibus odit incidunt totam ratione consequatur sapiente voluptatum nulla illum natus unde, animi esse necessitatibus fuga accusamus architecto molestiae. Impedit autem rerum ex eligendi.</p>
+        </div>
+    </div>
+
+
+
+    </main>
+    <script>
+        console.log("Javascripts Works🎉")
+        var paragraphs = document.querySelectorAll(".box")//select all the p tags
+        console.log(paragraphs)
+        //all paragraph to red
+        for(var i=0;i<paragraphs.length;bi++)
+        {
+            paragraphs[i].style.color="red"
+        }
+        //same this as aboce but using forEach
+        paragraphs.forEach((p)=>{
+            p.style.color="green"
+        })
+    </script>
+</body>
+</html>

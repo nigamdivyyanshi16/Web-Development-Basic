@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .content{
+            height: 0;
+            overflow:hidden;
+            background-color: palevioletred;
+            color:white;
+            padding:0;
+            font-size: 34px;
+        }
+    </style>
+</head>
+<body>
+    <button>Animate Content</button>
+    <div class="content">
+        <h1>Content</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quod.</p>
+    </div>
+    <script>
+        //on load
+        var btn=document.querySelector('button')
+        var ts=false
+        btn.addEventListener('click',()=>{
+            /*alert('clicked')*/
+            if(ts==false){
+            anime({
+                targets:'.content',
+                height:'500px',
+                width:'500px',
+
+                
+            })
+            ts=true
+            }else{
+                anime({
+                    targets:'.content',
+                    height:'0px',
+                    width:'0px',
+                    padding:'0rem',
+                    backgroundColor:'#1a1a1a',
+
+                })
+                ts=false;
+            }
+        })
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <style>
+        main{
+            display:grid;
+            place-items: center;
+            height:100vh;
+            font-size: 23px;
+            text-align: center;
+
+        }
+        .circle{
+            transform: scale(0);
+            height:100px;
+            width:100px;
+            position:relative;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="area">
+             <!--Welcome to java  -->
+            <span class="typing"></span>
+
+            <div class="circle"></div>
+            <button>
+                Dont Click Here
+            </button>
+        </div>
+    </main>
+    <script>
+        document.querySelector('.area').addEventListener('mouseover',()=>{
+            /*alert('Hello')*/
+            anime({
+                targets:'.circle',
+                scale:5,
+                borderRadius:'50%',
+                backgroundColor:'#ff9000',
+                duration:300,
+                zIndex:'-1',
+            })
+        })
+    </script>
+    <script>
+        var typed=new Typed('.typing', {
+            strings: [
+                'Life before Death',
+                'Courage before Fear',
+                'Journey before Destination'
+            ],
+            typeSpeed:50,
+            loop:true,
+            backSpeed:10,
+            // backSpeed for deleting the content quickly
+            
+        });
+        
+    </script>
+    <script>
+        document.querySelector('button').addEventListener('click',()=>{
+            Swal.fire({
+                title:'Error',
+                text:"Do you want to continue",
+                icon:'error',
+                confirmButtonText:'Cool'
+            })
+        })
+    </script>
+    
+</body>
+</html>

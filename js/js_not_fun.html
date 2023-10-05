@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS example 2</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            margin-top: 1rem;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #e49595;
+            box-shadow: 0px 0px 4px #333;
+        }
+        .controls{
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            gap:1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="range" id="r1">
+    <h1>Welcome to User Interaction</h1>
+
+    <div class="controls">
+        <label>Height<input type="number" id="height" ></label>
+        <label>Width<input type="number" id="width" ></label>
+        <label>Rotation X<input type="number" id="rotX" ></label>
+        <label>Rotation Y<input type="number" id="rotY" ></label>
+        <label>Color <input type="color" id="color"></label>
+    </div>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script>
+        var r1 = document.querySelector("#r1")
+        r1.addEventListener('change', () => {
+            var out = r1.value * 10+ 'px'
+            console.log(out)
+            document.querySelector('h1').style.fontSize = out
+        })
+
+        var boxes = document.querySelectorAll('.box')
+        document.querySelector('#height').addEventListener('change', ()=>{
+            var h = document.querySelector('#height').value
+            boxes.forEach(box => {
+                box.style.height = h + 'px'
+            })
+        })
+        document.querySelector('#width').addEventListener('change', ()=>{
+            var h = document.querySelector('#width').value
+            boxes.forEach(box => {
+                box.style.width = h + 'px'
+            })
+        })
+        document.querySelector('#rotX').addEventListener('change', ()=>{
+            var h = document.querySelector('#rotX').value
+            boxes.forEach(box => {
+                box.style.transform = `rotateX(${h}deg)`
+            })
+        })
+        document.querySelector('#rotY').addEventListener('change', ()=>{
+            var h = document.querySelector('#rotY').value
+            boxes.forEach(box => {
+                box.style.transform = `rotateY(${h}deg)`
+            })
+        })
+        document.querySelector('#color').addEventListener('change', ()=>{
+            var h = document.querySelector('#color').value
+            boxes.forEach(box => {
+                box.style.backgroundColor = h
+            })
+        })
+
+    </script>
+</body>
+
+</html>

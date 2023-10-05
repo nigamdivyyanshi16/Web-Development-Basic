@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Effect 2</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <style>
+        main{
+            height: 1000vh;
+        }
+        .container{
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease-in-out;
+        }
+        h1{
+            padding:.5rem;
+            margin:0;
+            font-size: 3rem;
+        }
+        p{
+            margin:0;
+        }
+        .container:nth-child(1){
+            background-color: orange;
+        }
+        .container:nth-child(2){
+            background-color:blue;
+        }
+        .container:nth-child(3){
+            background-color: peachpuff;
+        }
+        .container:nth-child(4){
+            background-color: red;
+        }
+        .container:nth-child(5){
+            background-color: greenyellow;
+        }
+        .fade-to-black{
+            background-color: black !important;
+            color:white;
+            transform:translateX(-99%);
+        }
+
+
+    </style>
+</head>
+<body>
+     <main>
+        <section class="container">
+            <h1>Lorem.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore non, adipisci nisi autem similique magnam ea beatae impedit soluta officiis rerum optio repudiandae perspiciatis laborum assumenda voluptatum vero iure!</p>
+            <p>Eum id corporis facere quae illo amet illum, sunt, omnis ad deleniti nihil est fugit, repudiandae quos earum voluptatum cupiditate ratione corrupti aut excepturi enim. Corporis veniam ipsa consectetur obcaecati.</p>
+        </section>
+        <section class="container">
+            <h1>Tempore!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magni tenetur cumque et voluptas. Molestiae non, alias quae voluptates vitae ipsam rerum distinctio, iusto quaerat incidunt obcaecati temporibus provident maiores.</p>
+            <p>Nobis rerum esse consequuntur dolor minus ipsum iusto enim, ullam minima cum consectetur alias repellat eaque. Repellat, excepturi necessitatibus labore alias debitis recusandae velit quas, esse quae facere accusamus quis!</p>
+        </section>
+        <section class="container">
+            <h1>Quia.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit tempore, animi sunt fuga aut quia blanditiis. Porro sed laborum veniam, assumenda libero exercitationem, ea fugiat, modi rerum aliquam at asperiores.</p>
+            <p>Corporis ex maxime natus error veritatis iure. Ad laborum cum vero nulla dolores aliquam, accusantium minus tempore veritatis exercitationem nesciunt eum, beatae, accusamus pariatur quis quia sapiente dolorum doloribus illo!</p>
+        </section>
+        <section class="container">
+            <h1>Dolorem!</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, nobis, nesciunt fugit error dicta amet, quod recusandae culpa sed ab nihil consequuntur quo! Vero inventore quasi suscipit repudiandae fuga debitis.</p>
+            <p>Et placeat iure inventore nobis ex veniam aspernatur accusantium mollitia, voluptate incidunt at, laudantium maiores quia eius repellendus vero, voluptates tempore ad. Ipsum, sed accusantium repellendus incidunt nemo animi dolores.</p>
+        </section>
+        <section class="container">
+            <h1>Quam.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At dicta dolores nam incidunt, in minus. Officia iste, sed molestias, asperiores alias ab cupiditate ipsum modi sunt aliquam recusandae laudantium voluptatem!</p>
+            <p>Officiis porro delectus vel dolorum minima numquam pariatur sapiente earum excepturi nisi doloribus aliquam ut soluta, neque, incidunt mollitia blanditiis eum reprehenderit. Velit consequatur maxime, ipsum ea sunt quis enim?</p>
+        </section>
+     </main> 
+     <script>
+        var controller=new ScrollMagic.Controller();
+        var indexes=[1,2,3,4,5]
+        indexes.forEach(function(index){
+        var scene1=new ScrollMagic.Scene({
+            triggerElement:`.container:nth-child(${index})`,//kiske basis pr action perform hoga
+            duration:'25%',
+            triggerHook:0,//by default trigger middle screen m hota toh trigger hook =0 mtlb top pr chla jaaye 1 h toh bottom 
+
+        })
+        .setClassToggle(`.container:nth-child(${index})`,'fade-to-black')
+        .addIndicators({name: `Slide ${index}`})
+        controller.addScene([scene1])
+        })
+     </script>
+</body>
+</html>
